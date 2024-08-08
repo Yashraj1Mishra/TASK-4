@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li class="link1"><a href="https://github.com/Yashraj1Mishra" target="_blank">GitHub</a></li>
+                <li class="link2"><a href="https://www.linkedin.com/in/yashraj-mishra-659a35293/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://4yush-shinde.github.io/SCT_WD_1/" target="_blank">Home</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>To-Do Web Application</h1>
+        </div>
+    </header><br><br>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <input type="datetime-local" id="dateTimeInput">
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Lists Of Tasks</h1>
+            <ul id="taskList"></ul>
+        </div>
+    </div><br><br><br><br><br>
+
+    <footer class="translucent-footer">
+        <div class="logo">
+            <a target="_blank"> 
+                Gmail - shindeayush1534@gmail.com
+            </a> <br><br>
+
+            <a href="https://github.com/Yashraj1Mishra" target="_blank"> 
+                <img src="Images/github_logo.png" height="40px" width="40px" alt="GitHub" id="github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/yashraj-mishra-659a35293/" target="_blank">
+                <img src="Images/linkedin_logo.png" height="28px" width="29px" alt="GitHub" id="linkedin"></a>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

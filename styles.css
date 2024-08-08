@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('Images/bg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    backdrop-filter: blur(15px);
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 99%;
+    padding: 20px 0;
+    color: rgb(79, 102, 216);
+    z-index: 2;
+    border-radius: 7px;
+    margin-top: 6px;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('Fonts/recoleta-regulardemo.otf') format('truetype'),
+
+  }
+
+.header-content {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+header h1 {
+    font-family: 'Recoleta', sans-serif;
+    font-size: 2.5em;
+}
+
+
+nav {
+    position: absolute;
+    top: 4em;
+    right: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    /* background-color: #444; */
+    box-shadow: 0 0 10px rgba(7, 112, 232, 0.449);
+
+    border-radius: 5px;
+    
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 20px rgba(0, 17, 255, 0.495);
+
+    background-color: #55555543;
+}
+
+.main-content {
+    margin-top: 120px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 60px; 
+    color: #fff;
+    backdrop-filter: blur(50px);
+    
+}
+
+.container {
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(11, 67, 179, 0.574);
+    width: 50%;
+    margin: 20px 0;
+    text-align: center;
+    background-color: rgba(243, 238, 238, 0.218);
+}
+
+.container h1 h1 {
+    margin-top: 0;
+}
+
+.container li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* h1 {
+    margin-top: 0;
+} */
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    backdrop-filter: blur(1px);
+    
+}
+
+
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #2feb5b;
+}
+
+li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li button:active {
+    transform: scale(0.8);
+    background-color: #333;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    width: calc(100% - 12px);
+    position: fixed;
+    bottom: 6px;
+    /* left: 6px; */
+    border-radius: 7px;
+}
+
+.translucent-footer {
+    background-color: rgba(54, 53, 53, 0.648); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 96%;
+    padding-bottom: 4px;
+}
+
+.logo {
+    padding: 2px;
+}
+
+.logo #linkedin {
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+
+.logo #github:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    
+}
+
+.logo #linkedin:hover {
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+    
+}
+
+.logo #github:active {
+    transform: scale(0.8);
+    
+}
+
+.logo #linkedin:active {
+    transform: scale(0.8);
+    
+}
